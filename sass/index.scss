@@ -1,0 +1,69 @@
+// Flags sprite URL
+
+i.flag:not(.icon):before {
+  background-image: url("/images/flags.png")
+}
+
+// Icons
+
+@font-face {
+  font-family: 'Icons';
+  src: url("/fonts/icons.eot");
+  src: url("/fonts/icons.eot?#iefix") format('embedded-opentype'), url("/fonts/icons.woff2") format('woff2'), url("/fonts/icons.woff") format('woff'), url("/fonts/icons.ttf") format('truetype'), url("/fonts/icons.svg#icons") format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+
+html{
+    margin: 0px auto;
+    max-width: 960px;
+    min-width: 300px;
+    font-size: 14px !important;
+}
+
+.ui.grid{
+    margin:0 !important;
+}
+
+
+.content{
+    margin: 36px 0;
+
+    .card{
+        cursor: pointer;
+    }
+}
+
+.sign-page{
+    input{
+        max-width: 250px;
+    }
+    button{
+        width: 250px;
+    }
+}
+
+
+#header{
+    .top-menu{
+        margin:0;
+        border:0;
+        border-radius:0;
+
+        .item:before{
+            content: unset;
+        }
+    }
+    .bot-menu{
+        margin:0;
+        border-radius: 0;
+    }
+}
+
+#footer .footer{
+    border-top:1px solid rgba(34,36,38,.15);
+}

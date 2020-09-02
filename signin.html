@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/index.css">
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
+
+    <title>Main Page</title>
+    
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="content sign-page">
+        <h2>Войти в аккаунт</h2>
+        <form class="ui form">
+            <div class="field">
+              <label>Логин</label>
+              <input type="text" name="last-name" placeholder="Максимально 10 символов">
+            </div>
+            <div class="field">
+                <label>Пароль</label>
+                <input type="password" name="last-name" placeholder="Минимально 6 символов">
+            </div>
+
+            <button class="ui button" type="submit">Войти</button>
+          </form>
+    </div>
+  
+    <div id="footer"></div>
+
+</body>
+</html>

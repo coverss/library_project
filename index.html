@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="build/index.css">
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
+
+    <title>Main Page</title>
+    
 </head>
 <body>
-    
+    <div id="header"></div>
+
+    <div class="content">
+        <div class="ui five cards">
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="2"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="3"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="3"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="3"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="img/card.jpeg" alt="book">
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+  
+    <div id="footer"></div>
+
 </body>
 </html>
