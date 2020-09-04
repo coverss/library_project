@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/index.css" />
+    <link rel="stylesheet" href="semantic/semantic.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <title>Main Page</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="content">
+      <h2>Расширенный поиск</h2>
+
+      <form class="ui form">
+        <div class="field">
+          <label>По автору</label>
+          <div class="ui category search">
+            <div class="ui icon input">
+              <input class="prompt" type="text" placeholder="Найти книгу по автору" />
+              <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+          </div>       
+         </div>
+         <div class="field">
+            <label>По году</label>
+            <div class="ui category search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Найти книгу по году выпуска" />
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>       
+           </div>
+           <div class="field">
+            <label>По изданию</label>
+            <div class="ui category search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Найти книгу по изданию" />
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>       
+           </div>
+           <div class="field">
+            <label>По названию</label>
+            <div class="ui category search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Найти книгу по названию" />
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>       
+           </div>
+           <button class="ui button" type="submit">Поиск</button>
+
+
+      </form>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

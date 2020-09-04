@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/index.css" />
+    <link rel="stylesheet" href="semantic/semantic.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <title>Main Page</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="content">
+      <div class="ui card">
+        <div class="content">
+          <div class="header">Темирлан Исмуханов</div>
+          <div class="meta">Присоединился в 2018</div>
+          <div class="description">Книг прочитано: 12</div>
+        </div>
+      </div>
+      <h2>История</h2>
+      <div class="ui grid">
+        <div class="four wide column">
+          <div class="ui vertical secondary menu">
+            <a class="active item" data-tab="first">Читаю сейчас</a>
+            <a class="item" data-tab="second">Хочу прочитать</a>
+            <a class="item" data-tab="third">Уже прочитал</a>
+          </div>
+        </div>
+        <div class="nine wide column">
+          <div class="ui active tab" data-tab="first">
+            <img
+              class="ui middle aligned tiny image"
+              src="img/card.jpeg"
+            />
+            <span>The Hobbit by J.R.R. Tolkien</span>
+            <div class="ui divider"></div>
+            <img
+              class="ui middle aligned tiny image"
+              src="img/card.jpeg"
+            />
+            <span>The Hobbit by J.R.R. Tolkien</span>
+            <div class="ui divider"></div>
+          </div>
+          <div class="ui tab" data-tab="second">Second</div>
+          <div class="ui tab" data-tab="third">Third</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
