@@ -51,19 +51,118 @@ html{
 #header{
     .top-menu{
         margin:0;
-        border:0;
         border-radius:0;
+        border-bottom: 3px solid #45403c;
 
         .item:before{
             content: unset;
         }
+
+        .item:first-child{
+            border-right: 3px solid;
+
+        }
+
+        .item{
+            background: #45403c;
+            color: #fff;
+        }
+    }
+
+    .logo-block{
+        img{
+            width: 150px;
+        }
     }
     .bot-menu{
-        margin:0;
-        border-radius: 0;
+        border-bottom: 3px solid #45403c;
+        .ui.menu{
+            margin:0;
+            border-radius: 0;
+            box-shadow: 0 0 black;
+            border:none;
+        }
+        .column{
+            padding:0;
+        }
+        .item:hover{
+            border:none;
+            background: #45403c;
+            color:#fff;
+            font-size:18px;
+        }
+        .item{
+            color: #45403c;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 12px;
+            border:none;
+        }
+
+        
+        .menu-items{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        .item:before{
+            content:none;
+        }
+
+    
     }
 }
 
+
 #footer .footer{
     border-top:1px solid rgba(34,36,38,.15);
+}
+
+#popular-block{
+    .item{
+        margin: 1rem 0;
+        padding: 1em 1em;
+        border-radius: .28571429rem;
+        border: 1px solid rgba(34,36,38,.15);
+        -webkit-box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15);
+        box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15); 
+    
+    }
+}
+
+.book-profile{
+    .ribbon.label{
+        z-index: 99;
+    }
+
+    .inverted.button{
+        font-weight: 400;
+    }
+
+    .wish-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+
+        button{
+            margin: 0;
+        }
+    }
+
+    .img-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -20px 0 0;
+    }
+
+    .segment {
+
+        img{
+            max-width: 150px;
+            max-height: 210px;
+            border-radius:4px;
+        }
+    }
 }
