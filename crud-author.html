@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/index.css" />
+    <link rel="stylesheet" href="semantic/semantic.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <title>Main Page</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="content">
+      <h2>Изменить/Создать Автора</h2>
+      <button class="ui labeled icon button btn-black" id="create-author-btn">
+        <i class="plus icon"></i>
+        Добавить Автора
+      </button>
+      <div class="ui input">
+        <input type="text" placeholder="Поиск..." />
+      </div>
+      <table class="ui striped table">
+        <thead>
+          <tr>
+            <th>Автор</th>
+            <th>Название Книги</th>
+            <th>Издательство</th>
+            <th>Год</th>
+            <th>Действие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Дж Роулинг</td>
+            <td>Гарри Поттер и Философский Камень</td>
+            <td>Авент</td>
+            <td>2007</td>
+            <td>
+              <div class="ui buttons">
+                <button id="edit-author-btn" class="ui button green">
+                  Изменить
+                </button>
+                <button id="delete-author-btn" class="ui button red">
+                  Удалить
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Дж Роулинг</td>
+            <td>Гарри Поттер и Философский Камень</td>
+            <td>Авент</td>
+            <td>2007</td>
+            <td>
+              <div class="ui buttons">
+                <button class="ui button green">Изменить</button>
+                <button class="ui button red">Удалить</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Дж Роулинг</td>
+            <td>Гарри Поттер и Философский Камень</td>
+            <td>Авент</td>
+            <td>2007</td>
+            <td>
+              <div class="ui buttons">
+                <button class="ui button green">Изменить</button>
+                <button class="ui button red">Удалить</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<div class="ui small modal create-author-modal">
+  <i class="close icon"></i>
+  <div class="header">Создание Автора</div>
+  <div class="content">
+    <form class="ui form">
+      <div class="field">
+        <label>Имя Автора</label>
+        <input type="text" name="last-name" placeholder="Автор" />
+      </div>
+      <button class="ui button btn-black" type="submit">Создать Автора</button>
+    </form>
+  </div>
+</div>
+
+<div class="ui tiny modal delete-author-modal">
+  <i class="close icon"></i>
+  <div class="content">
+    <div class="ui icon header">
+      <i class="trash icon"></i>
+      Удаление Автора
+    </div>
+    <div class="content">
+      <p>Вы уверены в том, что хотите удалить Автора?</p>
+    </div>
+    <div class="actions">
+      <div class="ui red basic cancel button">
+        <i class="remove icon"></i>
+        Нет
+      </div>
+      <div class="ui green ok button">
+        <i class="checkmark icon"></i>
+        Да
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui small modal edit-author-modal">
+  <i class="close icon"></i>
+  <div class="header">Изменить название Автора</div>
+  <div class="content">
+    <form class="ui form">
+      <div class="field">
+        <label>Автор</label>
+        <input type="text" name="first-name" placeholder="Название" />
+      </div>
+      <button class="ui button btn-black" type="submit">Изменить Автора</button>
+    </form>
+  </div>
+</div>

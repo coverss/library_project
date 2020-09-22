@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/index.css" />
+    <link rel="stylesheet" href="semantic/semantic.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <title>Main Page</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="content">
+      <h2>Изменить/Создать Книгу</h2>
+      <button class="ui labeled icon button btn-black" id="create-book-btn">
+        <i class="plus icon"></i>
+        Добавить Книгу
+      </button>
+      <div class="ui input">
+        <input type="text" placeholder="Поиск..." />
+      </div>
+      <table class="ui striped table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Автор</th>
+            <th>Издательство</th>
+            <th>Год</th>
+            <th>Действие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Гарри Поттер и Философский Камень</td>
+            <td>Дж Роулинг</td>
+            <td>Авент</td>
+            <td>2007</td>
+            <td>
+              <div class="ui buttons">
+                <button id="edit-book-btn" class="ui button green">
+                  Изменить
+                </button>
+                <button id="details-book-btn" class="ui button blue">
+                  Детали
+                </button>
+                <button id="delete-book-btn" class="ui button red">
+                  Удалить
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Гарри Поттер и Философский Камень</td>
+            <td>Дж Роулинг</td>
+            <td>Авент</td>
+            <td>2007</td>
+            <td>
+              <div class="ui buttons">
+                <button id="edit-book-btn" class="ui button green">
+                  Изменить
+                </button>
+                <button id="details-book-btn" class="ui button blue">
+                  Детали
+                </button>
+                <button id="delete-book-btn" class="ui button red">
+                  Удалить
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Гарри Поттер и Философский Камень</td>
+            <td>Дж Роулинг</td>
+            <td>Авент</td>
+            <td>2007</td>
+            <td>
+              <div class="ui buttons">
+                <button id="edit-book-btn" class="ui button green">
+                  Изменить
+                </button>
+                <button id="details-book-btn" class="ui button blue">
+                  Детали
+                </button>
+                <button id="delete-book-btn" class="ui button red">
+                  Удалить
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<div class="ui small modal create-book-modal">
+  <i class="close icon"></i>
+  <div class="header">Создание Книги</div>
+  <div class="content">
+    <form class="ui form">
+      <div class="field">
+        <label>Название</label>
+        <input type="text" name="first-name" placeholder="Название" />
+      </div>
+      <div class="field">
+        <label>Автор</label>
+        <input type="text" name="last-name" placeholder="Автор" />
+      </div>
+      <div class="field">
+        <label>Издательство</label>
+        <input type="text" name="last-name" placeholder="Издательство" />
+      </div>
+      <div class="field">
+        <label>Год</label>
+        <input type="text" name="last-name" placeholder="Год" />
+      </div>
+      <button class="ui button btn-black" type="submit">Создать Книгу</button>
+    </form>
+  </div>
+</div>
+
+<div class="ui tiny modal delete-book-modal">
+  <i class="close icon"></i>
+  <div class="content">
+    <div class="ui icon header">
+      <i class="trash icon"></i>
+      Удаление Книги
+    </div>
+    <div class="content">
+      <p>Вы уверены в том, что хотите удалить книгу?</p>
+    </div>
+    <div class="actions">
+      <div class="ui red basic cancel button">
+        <i class="remove icon"></i>
+        Нет
+      </div>
+      <div class="ui green ok button">
+        <i class="checkmark icon"></i>
+        Да
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui small modal edit-book-modal">
+  <i class="close icon"></i>
+  <div class="header">Изменить свойства книги</div>
+  <div class="content">
+    <form class="ui form">
+      <div class="field">
+        <label>Название</label>
+        <input type="text" name="first-name" placeholder="Название" />
+      </div>
+      <div class="field">
+        <label>Автор</label>
+        <input type="text" name="last-name" placeholder="Автор" />
+      </div>
+      <div class="field">
+        <label>Издательство</label>
+        <input type="text" name="last-name" placeholder="Издательство" />
+      </div>
+      <div class="field">
+        <label>Год</label>
+        <input type="text" name="last-name" placeholder="Год" />
+      </div>
+      <button class="ui button btn-black" type="submit">Изменить Свойства Книги</button>
+    </form>
+  </div>
+</div>
+
+<div class="ui small modal details-book-modal">
+  <i class="close icon"></i>
+  <div class="header"></div>
+  <div class="content"></div>
+</div>

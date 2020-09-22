@@ -18,6 +18,15 @@ i.flag:not(.icon):before {
 }
 
 
+.ui.input.focus>input, .ui.input>input:focus, .ui.form input:not([type]):focus, .ui.form input[type=date]:focus, .ui.form input[type=datetime-local]:focus, .ui.form input[type=email]:focus, .ui.form input[type=file]:focus, .ui.form input[type=number]:focus, .ui.form input[type=password]:focus, .ui.form input[type=search]:focus, .ui.form input[type=tel]:focus, .ui.form input[type=text]:focus, .ui.form input[type=time]:focus, .ui.form input[type=url]:focus{
+    border-color: #45403c !important;
+}
+
+.btn-black{
+    background-color: #45403c !important;
+    color: #fff !important;
+}
+
 html{
     margin: 0px auto;
     max-width: 960px;
@@ -164,5 +173,21 @@ html{
             max-height: 210px;
             border-radius:4px;
         }
+    }
+}
+
+.ui.modal{
+    .header{
+        text-align: center;
+    }
+    .content{
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+.delete-book-modal, .delete-author-modal, .delete-edition-modal{
+    .content{
+        text-align: center;
     }
 }
