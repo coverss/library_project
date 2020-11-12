@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="build/index.css" />
-    <link rel="stylesheet" href="semantic/semantic.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="semantic/semantic.min.js"></script>
@@ -22,44 +21,59 @@
   <body>
     <div id="header"></div>
 
-    <div class="content">
-      <div class="ui card">
-        <div class="content">
-          <div class="header">Темирлан Исмуханов</div>
-          <div class="meta">Присоединился в 2018</div>
-          <div class="description">Книг прочитано: 12</div>
-        </div>
+    <div class="content profile-page">
+      <div class="card">
+        <div class="header">Темирлан Исмуханов</div>
+        <div class="meta">Присоединился в 2018</div>
+        <div class="description">Книг прочитано: 12</div>
       </div>
-      <h2>История</h2>
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui vertical secondary menu">
-            <a class="active item" data-tab="first">Читаю сейчас</a>
-            <a class="item" data-tab="second">Хочу прочитать</a>
-            <a class="item" data-tab="third">Уже прочитал</a>
-          </div>
-        </div>
-        <div class="nine wide column">
-          <div class="ui active tab" data-tab="first">
-            <img
-              class="ui middle aligned tiny image"
-              src="img/card.jpeg"
-            />
-            <span>The Hobbit by J.R.R. Tolkien</span>
-            <div class="ui divider"></div>
-            <img
-              class="ui middle aligned tiny image"
-              src="img/card.jpeg"
-            />
-            <span>The Hobbit by J.R.R. Tolkien</span>
-            <div class="ui divider"></div>
-          </div>
-          <div class="ui tab" data-tab="second">Second</div>
-          <div class="ui tab" data-tab="third">Third</div>
-        </div>
-      </div>
-    </div>
+      <h1>История</h1>
 
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openCity(event, 'London')"
+          id="defaultOpen"
+        >
+          Читаю сейчас
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">
+          Хочу прочитать
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+          Уже прочитал
+        </button>
+      </div>
+
+      <div id="London" class="tabcontent items">
+        <div class="item">
+          <div class="img">
+            <img class="small image" src="img/card.jpeg" />
+          </div>
+          <a class="name">
+            The Hobbit by J.R.R. Tolkien
+          </a>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img class="small image" src="img/card.jpeg" />
+          </div>
+          <a class="name">
+            The Hobbit by J.R.R. Tolkien
+          </a>
+        </div>
+      </div>
+
+      <div id="Paris" class="tabcontent">Section 2</div>
+
+      <div id="Tokyo" class="tabcontent">Section 3</div>
+    </div>
     <div id="footer"></div>
   </body>
 </html>
+
+<script>
+  $( document ).ready(function() {
+      document.getElementById("defaultOpen").click();
+  });
+</script>
